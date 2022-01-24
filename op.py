@@ -50,7 +50,7 @@ def return_dataframe(ticker, start_day):
 
 
 def if_used(data, person):
-	""" 만약 내가 정한 조건에 맞춰 매수, 매도시 수익률 확인 함수"""
+	""" 내가 정한 조건에 맞춰 매수, 매도시 수익률 확인 함수"""
 
 	rsi = ta.momentum.rsi(data['Close'])
 	mfi = ta.volume.money_flow_index(data['High'],data['Low'],data['Close'],data['Volume'])
